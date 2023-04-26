@@ -15,7 +15,7 @@ def get_All_post(db:Session =Depends(get_db),current_user=Depends(oauth2.get_cur
    # cursor.execute("""SELECT * FROM posts""")
    # posts =cursor.fetchall()
    # return {"data":posts}
-    print(current_user.email)
+    print(current_user.id)
 #retreving data from database by sqlalchemy orm   
     # posts = db.query(models.Post).filter(models.Post.content.contains(search)).limit(limit).offset(skip).all()
     # if not posts:
